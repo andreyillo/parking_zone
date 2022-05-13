@@ -19,7 +19,7 @@
 					':marca' =>$marca,
 					':color' =>$color,
 					':tipo' =>$tipo,
-					':fecha_entrada' =>$fecha_entrada
+					':fecha_entrada' =>$fecha_matricula
 				
 				));
 				header('Location: index.php');
@@ -41,18 +41,18 @@
 </head>
 <body>
 	<div class="contenedor">
-		<h2>Registre tu vehiculo aqui</h2>
+		<h2>Registre Tu Vehiculo aqui</h2>
 		<form action="" method="post">
 			<div class="form-group">
-				<input type="text" name="num_matricula" placeholder="escriba tu matricula" class="input__text">
-				<input type="text" name="marca" placeholder="escriba la marca del vehiculo" class="input__text">
+				<input type="text" name="num_matricula" placeholder="digite su matricula del vehiculo" class="input__text">
+				<input type="text" name="marca" placeholder="digite la marca del vehiculo" class="input__text">
 			</div>
 			<div class="form-group">
-				<input type="text" name="color" placeholder="escriba el color" class="input__text">
+				<input type="text" name="color" placeholder="digite el color del vehiculo" class="input__text">
 				<input type="text" name="tipo" placeholder="digite el tipo de vehiculo" class="input__text">
 			</div>
 			<div class="form-group">
-				<input type="datetime-local" name="fecha_entrada" placeholder="escriba la fecha entrada de tu vehiculo" class="input__text">
+				<input type="datetime-local" name="fecha_entrada" placeholder="ingrese la hora de entrada " class="input__text">
 			</div>
 			<div class="btn__group">
 				<a href="../modelo/home.php" class="btn btn__danger">Cancelar</a>
